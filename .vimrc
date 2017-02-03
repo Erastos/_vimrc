@@ -25,24 +25,28 @@ Plugin 'Shougo/neocomplete'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+
 " Snipmate Plugins
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'MarcWeber/vim-addon-manager'
+" Autocomplete
 call vundle#end()
 filetype plugin indent on
 
 set wildmenu
-colorscheme solarized
+" colorscheme solarized
 
 let g:airline_powerline_fonts = 1
 
 set backspace=2
 set laststatus=2
-
-let g:airline_theme = 'luna'
+set t_Co=256
+let g:airline_theme = 'dark'
 
 set nocompatible | filetype indent plugin on | syn on
 set rtp+=~/.vim/bundle/vim-addon-manager
@@ -77,3 +81,10 @@ call SetupVAM()
 " OPTION 1, use VAMActivate
 VAMActivate vim-snippets snipmate ..
 
+" Set Numbers
+set relativenumber
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=Black gui=NONE guifg=NONE guifg=DarkGrey guibg=NONE
+highlight CursorLineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=Black gui=NONE guifg=NONE guifg=DarkGrey guibg=NONE 
+
+
+" Hello World
