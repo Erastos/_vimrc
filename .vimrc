@@ -34,6 +34,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'MarcWeber/vim-addon-manager'
+Plugin 'jiangmiao/auto-pairs'
 " Autocomplete
 call vundle#end()
 filetype plugin indent on
@@ -86,5 +87,3 @@ set relativenumber
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=Black gui=NONE guifg=NONE guifg=DarkGrey guibg=NONE
 highlight CursorLineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=Black gui=NONE guifg=NONE guifg=DarkGrey guibg=NONE 
 
-
-" Hello World
