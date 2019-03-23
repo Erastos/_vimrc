@@ -26,6 +26,14 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ervandew/supertab'
+Plugin 'mattn/emmet-vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-surround'
+Plugin 'w0rp/ale'
+Plugin 'tpope/vim-commentary'
+Plugin 'wellle/targets.vim'
+Plugin 'dylanaraps/wal.vim'
 
 " Snipmate Plugins
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -36,6 +44,8 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'jiangmiao/auto-pairs'
 " Autocomplete
 call vundle#end()
+colorscheme wal
+
 filetype plugin indent on
 
 let mapleader = ","
@@ -43,23 +53,44 @@ let mapleader = ","
 
 set wildmenu
 " colorscheme solarized
-
+set hlsearch
 let g:airline_powerline_fonts = 1
 
 set backspace=2
 set laststatus=2
 set t_Co=256
-let g:airline_theme = 'dark'
+let g:airline_theme = 'onedark'
 
 " Nerdtree options
-map <C-n> :NERDTree<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 
 
 " Set Numbers
 set relativenumber
+set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=Black gui=NONE guifg=NONE guifg=DarkGrey guibg=NONE
 highlight CursorLineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=Black gui=NONE guifg=NONE guifg=DarkGrey guibg=NONE 
 
+highlight CursorLineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=Black gui=NONE guifg=NONE guifg=DarkGrey guibg=NONE 
 
 
+" Tab Switching
+nmap <leader>n :tabNext<CR>
+nmap <leader>m :tabprevious<CR>
+
+" Splits
+set splitbelow splitright
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+map <leader>h :split<CR>
+map <leader>v :vsplit<CR>
+
+map <leader>s :w<CR>
+map <leader>S :wq<CR>
+
+" Tab Width
+set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
