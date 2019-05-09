@@ -52,8 +52,10 @@ let mapleader = ","
 
 
 set wildmenu
+set noswapfile
 " colorscheme solarized
 set hlsearch
+set incsearch
 let g:airline_powerline_fonts = 1
 
 set backspace=2
@@ -94,3 +96,8 @@ map <leader>S :wq<CR>
 
 " Tab Width
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+
+noremap H ^
+noremap L g_
+
+vnoremap // y/<C-R>"<CR>
