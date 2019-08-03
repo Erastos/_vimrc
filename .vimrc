@@ -16,7 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'powerline/fonts'
 " Plugin 'Shougo/neocomplete'
@@ -25,7 +25,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 Plugin 'mattn/emmet-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-eunuch'
@@ -61,8 +61,7 @@ let g:airline_powerline_fonts = 1
 set backspace=2
 set laststatus=2
 set t_Co=256
-let g:airline_theme = 'onedark'
-
+let g:airline_theme = "ouo" 
 " Nerdtree options
 map <C-n> :NERDTreeToggle<CR>
 
